@@ -1,8 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Vidaloka&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500;500&display=swap");
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
 button {
   background: transparent;
   border: none;
-  outline: none;
+  outline: none !important;
 }
 
 header {
@@ -132,12 +138,22 @@ main svg path {
 }
 
 aside {
+  top: 0;
+  right: 0;
   background: #E3B42A;
+  width: 380px;
+  min-height: 100vh;
+  position: fixed;
+  z-index: 999;
+  margin-right: -380px;
+  -webkit-transition: all ease-in .25s;
+  transition: all ease-in .25s;
 }
 
 aside ul {
   list-style: none;
-  padding: 0;
+  padding-top: 1rem;
+  padding-right: 2rem;
 }
 
 aside ul li {
@@ -145,7 +161,138 @@ aside ul li {
 }
 
 aside ul li a {
+  display: inline-block;
   color: #fff;
   text-decoration: none !important;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 36px;
+  font-weight: 800;
+  color: #231F20 !important;
+  letter-spacing: 0.5px;
+  -webkit-transition: all ease-in .1s;
+  transition: all ease-in .1s;
+}
+
+aside ul li a:hover, aside ul li a:active, aside ul li a:focus {
+  color: #fff !important;
+}
+
+.active-menu {
+  margin-right: 0 !important;
+  -webkit-box-shadow: -1px 0 5px #231F2050;
+          box-shadow: -1px 0 5px #231F2050;
+}
+
+section#sobre {
+  padding: 4rem 0;
+}
+
+section#sobre h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 30px;
+  letter-spacing: 0.5px;
+}
+
+section#sobre h5 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  line-height: 2;
+}
+
+section#sobre a {
+  background: #231F20;
+  font-weight: 600;
+  border-radius: 50px;
+  padding: .75rem 2rem;
+  color: #fff !important;
+  text-decoration: none !important;
+  display: inline-block;
+}
+
+section#contato {
+  padding: 3rem 0;
+  background: #E3B42A;
+}
+
+section#contato h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 30px;
+  letter-spacing: 0.5px;
+}
+
+section#contato h5 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+}
+
+section#contato input, section#contato textarea {
+  font-family: 'Montserrat', sans-serif;
+  background: #231F20;
+  border-color: #231F20;
+  color: #fff;
+  font-weight: 600;
+  padding: 1.5rem 1rem;
+}
+
+section#contato button {
+  background: #fff;
+  font-weight: 600;
+  border-radius: 50px;
+  padding: .75rem 2rem;
+}
+
+footer {
+  padding: 3rem 0 1rem 0;
+  background: #231F20;
+  color: #fff;
+}
+
+footer a {
+  color: #fff !important;
+}
+
+footer .social-icon {
+  margin-top: 2rem;
+  font-size: 30px;
+}
+
+footer h5 {
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+footer p a {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  text-decoration: none !important;
+}
+
+footer p a i {
+  width: 25px;
+}
+
+footer hr {
+  border-color: #b2b2b2;
+}
+
+footer .btn-whatsapp {
+  display: block;
+  text-decoration: none !important;
+  background: #2af196;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  padding: 1rem 0;
+  font-weight: 600;
+  text-align: center;
 }
 /*# sourceMappingURL=main.css.map */
