@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Vidaloka&display=swap');
+button{
+  background: transparent;
+  border: none;
+  outline: none;
+}
+header{
+  position: absolute;
+  width: 100%;
+  padding-top: 2.8rem;
+}
+#header-logo{
+  width: 100px;
+}
+#btn-expand-menu{
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  text-align: -webkit-right;
+  span{
+    border-radius: 3px;
+    display: block;
+    background: #fff;
+    height: 3px;
+    margin: 4px 0;
+    &:first-child{
+      width: 85%;
+    }
+    &:last-child{
+      width: 70%;
+    }
+  }
+}
+
+main{
+  background: #231F20;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  h1{
+    font-family: 'Vidaloka', serif;
+    font-size: 3.5em;
+    line-height: 1em;
+    letter-spacing: 0.5px;
+  }
+  a{
+    margin-top: 2.5rem;
+    display: inline-block;
+    padding: 16px 50px;
+    text-decoration: none !important;
+    font-family: 'Vidaloka', serif;
+    color: #fff;
+    background: transparent;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: all ease-in .25s;
+    &:hover, &:focus, &:active{
+      color: #231F20;
+      background: #fff;
+      transform: scale(1.1);
+    }
+  }
+  #img-cuia{
+    max-width: 280px;
+  }
+  #main-left-bg{
+    position: fixed;
+    left: 0;
+    bottom: 50%;
+    width: 130px;
+    transform: translate(0,50%);
+    opacity: .33;
+    margin-left: -65px;
+    height: 380px;
+    transition: all ease-in .1s;
+  }
+  #main-right-bg{
+    position: fixed;
+    right: 0px;
+    bottom: 50%;
+    width: 540px;
+    transform: translate(0,50%);
+    opacity: .33;
+    margin-right: -280px;
+    transition: all ease-in .15s;
+  }
+  span{
+    position: relative;
+  }
+  svg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: calc(100% + 20px);
+    height: calc(100% + 20px);
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    overflow: visible;
+    path{
+      stroke: #E3B42A;
+      stroke-width: 5px;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+  }
+}
+
+aside{
+  background: #E3B42A;
+  ul{
+    list-style: none;
+    padding: 0;
+    li{
+      display: block;
+      a{
+        color: #fff;
+        text-decoration: none !important;
+      }
+    }
+  }
+}

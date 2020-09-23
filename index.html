@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/35d31905e0.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/main.css">
+  <title>Galpão Criativo - Entra, toma um mate e vamos criar essa tua ideia!</title>
+</head>
+
+<body>
+
+  <aside>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-right">
+          <button onclick="closeMenu()"><i class="fas fa-times"></i></button>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#curso">O curso</a></li>
+            <li><a href="#portfolio">Portfólio</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#contato">Contato</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#ebook">E-book</a></li>
+            <li><a href="#"><i class="fab fa-facebook-square"></i></a><a href="#"><i class="fab fa-instagram"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <a href="https://www.galpaocriativo.com">
+            <img id="header-logo" src="images/logo.svg" alt="Logo Galpão Criativo">
+          </a>
+        </div>
+        <div class="col-6 text-right">
+          <button id="btn-expand-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <img id="main-left-bg" class="d-none d-lg-block" src="images/circles-lg.svg" alt="background">
+    <img id="main-right-bg" class="d-none d-lg-block" src="images/circles-sm.svg" alt="background">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-12 col-lg-6">
+          <h1 class="text-white">
+            Entra, toma um mate e vamos criar essa tua <span>ideia!<svg xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 500 150" preserveAspectRatio="none">
+                <path
+                  d="M9.3,127.3c49.3-3,150.7-7.6,199.7-7.4c121.9,0.4,189.9,0.4,282.3,7.2C380.1,129.6,181.2,130.6,70,139 c82.6-2.9,254.2-1,335.9,1.3c-56,1.4-137.2-0.3-197.1,9">
+                </path>
+              </svg></span>
+          </h1>
+          <a href="#contato">mas é agora</a>
+        </div>
+        <div class="col-12 col-lg-6 text-center d-none d-lg-block">
+          <img id="img-cuia" src="images/main-image.svg" alt="Cuia">
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <section id="servicos">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h1>Serviços</h1>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+
+  <script>
+    $(window).scroll(function () {
+      if ($(window).scrollTop() + $(window).height() == $(document).height()) {
+        $('#main-left-bg').css('opacity', '0');
+        $('#main-right-bg').css('opacity', '0');
+      }
+      if ($(window).scrollTop() == 0) {
+        $('#main-left-bg').css('opacity', '0.3');
+        $('#main-right-bg').css('opacity', '0.3');
+      }
+    });
+  </script>
+</body>
+
+</html>
