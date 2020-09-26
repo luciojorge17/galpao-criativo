@@ -20,12 +20,12 @@
           <button onclick="menu()"><i class="fas fa-times" style="color: #fff !important;"></i></button>
           <ul>
             <li><a href="#home">Home</a></li>
-            <li><a href="#curso">O curso</a></li>
-            <li><a href="#portfolio">Portifólio</a></li>
+            <li><a href="javascript:void(0)" onclick="soon()">O curso</a></li>
+            <li><a href="https://www.behance.net/galpocriativo" target="_blank">Portifólio</a></li>
             <li><a href="#servicos">Serviços</a></li>
             <li><a href="#contato">Contato</a></li>
             <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#ebook">E-book</a></li>
+            <li><a href="javascript:void(0)" onclick="soon()">E-book</a></li>
             <li class="mt-3">
               <a href="https://www.facebook.com/gpcriativo" target="_blank" style="margin-right: 20px !important;"><i
                   class="fab fa-facebook-square"></i></a><a href="https://www.instagram.com/gpcriativo/"
@@ -57,8 +57,8 @@
   </header>
 
   <main id="home">
-    <img id="main-left-bg" class="d-none d-lg-block" src="images/circles-lg.svg" alt="background">
     <img id="main-right-bg" class="d-none d-lg-block" src="images/circles-sm.svg" alt="background">
+    <img id="main-left-bg" class="d-none d-lg-block" src="images/circles-lg.svg" alt="background">
     <div class="container">
       <div class="row align-items-center">
         <div class="col-12 col-lg-6">
@@ -82,8 +82,38 @@
   <section id="servicos">
     <div class="container">
       <div class="row">
-        <div class="col-12">
-          <h1>Serviços</h1>
+        <div class="col-12 mb-4 text-center">
+          <h3>Serviços</h3>
+          <h5>Entenda tudo que fazemos para aumentar os resultados do seu negócio</h5>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-lg-4">
+          <div class="card-servicos">
+            <div class="card-image text-center">
+              <img src="images/criacao-e-gestao-de-marca.svg" alt="Criação e gestão de marca">
+            </div>
+            <h4 class="card-title">Criação e gestão de marca</h4>
+            <p class="card-text">Desenvolvemos e cuidamos do patrimônio mais precioso da sua empresa: a sua marca.</p>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4 text-center">
+          <div class="card-servicos">
+            <div class="card-image text-center">
+              <img src="images/desenvolvimento-de-site.svg" alt="Desenvolvimento de sites">
+            </div>
+            <h4 class="card-title">Desenvolvimento de sites</h4>
+            <p class="card-text">Desenvolvemos sites e lojas virtuais que fortalecem sua presença digital.</p>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4 text-center">
+          <div class="card-servicos">
+            <div class="card-image text-center">
+              <img src="images/desenvolvimento-de-lojas-virtuais.svg" alt="Desenvolvimento de sites">
+            </div>
+            <h4 class="card-title">Desenvolvimento de lojas virtuais</h4>
+            <p class="card-text">Desenvolvemos lojas virtuais sob medida para você vender mais online.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -92,7 +122,8 @@
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <h1>Serviços</h1>
+          <a href="https://www.behance.net/galpocriativo" target="_blank" class="btn btn-portifolio btn-block">Confira
+            nosso portifólio<span class="float-right"><i class="fab fa-behance"></i></span></a>
         </div>
       </div>
     </div>
@@ -104,7 +135,7 @@
           <h3>Sobre</h3>
           <h5>A galera do Galpão, somos apaixonados por tecnologia e criativos por natureza.<br>
             Queremos transformar problemas em oportunidades digitais para melhorar suas vendas.</h5>
-          <a class="mt-3" href="#">Saiba mais</a>
+          <a class="mt-3" href="#contato">Saiba mais</a>
         </div>
       </div>
     </div>
@@ -123,16 +154,20 @@
             <input type="text" name="txtNome" id="txtNome" class="form-control mt-1 mb-1" placeholder="Nome" required>
           </div>
           <div class="col-12 col-lg-6">
-            <input type="email" name="txtEmail" id="txtEmail" class="form-control mt-1 mb-1" placeholder="E-mail" required>
+            <input type="email" name="txtEmail" id="txtEmail" class="form-control mt-1 mb-1" placeholder="E-mail"
+              required>
           </div>
           <div class="col-12 col-lg-6">
-            <input type="text" name="txtCelular" id="txtCelular" class="form-control mt-1 mb-1 maskCelular" placeholder="Celular" required>
+            <input type="text" name="txtCelular" id="txtCelular" class="form-control mt-1 mb-1 maskCelular"
+              placeholder="Celular" required>
           </div>
           <div class="col-12 col-lg-6">
-            <input type="text" name="txtCidade" id="txtCidade" class="form-control mt-1 mb-1" placeholder="Cidade" required>
+            <input type="text" name="txtCidade" id="txtCidade" class="form-control mt-1 mb-1" placeholder="Cidade"
+              required>
           </div>
           <div class="col-12">
-            <textarea name="txtMensagem" id="txtMensagem" rows="5" class="form-control mt-1 mb-1" placeholder="Mensagem" required></textarea>
+            <textarea name="txtMensagem" id="txtMensagem" rows="5" class="form-control mt-1 mb-1" placeholder="Mensagem"
+              required></textarea>
           </div>
           <div class="col-12 text-center mt-3">
             <button type="submit">Enviar mensagem</button>
@@ -146,21 +181,23 @@
     <div class="container">
       <div class="row">
         <div class="col-12 col-lg-6">
-          <img src="images/logo.svg" alt="Logo Galpão Criativo" style="width: 135px;"><br>
+          <a href="https://www.galpaocriativo.com"><img src="images/logo.svg" alt="Logo Galpão Criativo" style="width: 135px;"></a><br>
           <a href="https://www.facebook.com/gpcriativo" target="_blank" style="margin-right: 20px !important;"><i
               class="fab fa-facebook-square social-icon"></i></a><a href="https://www.instagram.com/gpcriativo/"
             target="_blank"><i class="fab fa-instagram social-icon"></i></a>
         </div>
         <div class="col-12 col-lg-6">
           <h5 class="mb-3">Contato</h5>
-          <p><a href="https://api.whatsapp.com/send?1=pt_BR&amp;phone=555584370921"><i class="fab fa-whatsapp"></i> (55) 9 8437 0921</a></p>
+          <p><a href="https://api.whatsapp.com/send?1=pt_BR&amp;phone=555584370921"><i class="fab fa-whatsapp"></i> (55)
+              9 8437 0921</a></p>
           <p><a href="mailto:oi@galpaocriativo.com"><i class="far fa-envelope"></i> oi@galpaocriativo.com</a></p>
         </div>
       </div>
       <hr>
       <div class="row">
         <div class="col-12">
-          <a class="btn-whatsapp" href="https://api.whatsapp.com/send?1=pt_BR&amp;phone=555584370921"><i class="fab fa-whatsapp"></i> CHAMA NO WHATSAPP</a>
+          <a class="btn-whatsapp" href="https://api.whatsapp.com/send?1=pt_BR&amp;phone=555584370921"><i
+              class="fab fa-whatsapp"></i> CHAMA NO WHATSAPP</a>
         </div>
       </div>
     </div>
@@ -177,20 +214,11 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
     integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
     crossorigin="anonymous"></script>
+  <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/8533669.js"></script>
 
   <script>
-    $(window).scroll(function () {
-      if ($(window).scrollTop() + $(window).height() == $(document).height()) {
-        $('#main-left-bg').css('opacity', '0');
-        $('#main-right-bg').css('opacity', '0');
-      }
-      if ($(window).scrollTop() == 0) {
-        $('#main-left-bg').css('opacity', '0.3');
-        $('#main-right-bg').css('opacity', '0.3');
-      }
-    });
-
     const menu = () => $('aside').toggleClass('active-menu');
+    const soon = () => alert('Em breve...')
   </script>
 </body>
 

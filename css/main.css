@@ -1,8 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Vidaloka&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;800&display=swap");
 * {
   font-family: 'Roboto', sans-serif;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 button {
@@ -46,7 +51,7 @@ header {
 
 main {
   background: #231F20;
-  height: 100vh;
+  min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -60,6 +65,10 @@ main h1 {
   font-size: 3.5em;
   line-height: 1em;
   letter-spacing: 0.5px;
+}
+
+main h1 span {
+  font-family: 'Vidaloka', serif;
 }
 
 main a {
@@ -89,7 +98,7 @@ main #img-cuia {
 }
 
 main #main-left-bg {
-  position: fixed;
+  position: absolute;
   left: 0;
   bottom: 50%;
   width: 130px;
@@ -103,7 +112,7 @@ main #main-left-bg {
 }
 
 main #main-right-bg {
-  position: fixed;
+  position: absolute;
   right: 0px;
   bottom: 50%;
   width: 540px;
@@ -183,6 +192,68 @@ aside ul li a:hover, aside ul li a:active, aside ul li a:focus {
           box-shadow: -1px 0 5px #231F2050;
 }
 
+section#servicos {
+  padding: 4rem 0;
+}
+
+section#servicos h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 30px;
+  letter-spacing: 0.5px;
+}
+
+section#servicos h5 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  line-height: 2;
+}
+
+section#servicos .card-servicos {
+  border-radius: 5px;
+  border: 1px solid #f2f2f2;
+  -webkit-transition: all ease-in .25s;
+  transition: all ease-in .25s;
+  text-align: center !important;
+  padding: 4rem 2.5rem;
+}
+
+section#servicos .card-servicos:hover {
+  cursor: pointer;
+  border-color: #2af196;
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+
+section#servicos .card-servicos .card-title, section#servicos .card-servicos .card-text {
+  font-family: 'Poppins', sans-serif;
+}
+
+section#servicos .card-servicos img {
+  width: 80px;
+}
+
+section#servicos .card-servicos .card-image {
+  min-height: 100px;
+}
+
+section#servicos .card-servicos .card-title {
+  letter-spacing: 2px;
+  font-weight: 600;
+  font-size: 18px;
+  text-transform: uppercase;
+  min-height: 65px;
+}
+
+section#servicos .card-servicos .card-text {
+  color: #656565;
+  font-size: 14px;
+  min-height: 80px;
+}
+
 section#sobre {
   padding: 4rem 0;
 }
@@ -211,6 +282,21 @@ section#sobre a {
   color: #fff !important;
   text-decoration: none !important;
   display: inline-block;
+}
+
+section#portifolio {
+  background: #E3B42A;
+  padding: 2rem 0;
+}
+
+section#portifolio .btn-portifolio {
+  background: #231F20;
+  color: #fff;
+  padding: 1rem;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  letter-spacing: 0.5px;
 }
 
 section#contato {
@@ -294,5 +380,35 @@ footer .btn-whatsapp {
   padding: 1rem 0;
   font-weight: 600;
   text-align: center;
+}
+
+@media only screen and (max-width: 767px) {
+  header {
+    padding-top: 30px;
+  }
+  main {
+    min-height: 60vh;
+  }
+  main h1 {
+    font-size: 40px;
+  }
+  main .col-12:first-child {
+    padding-left: 30px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  header {
+    padding-top: 20px;
+  }
+  main {
+    min-height: 75vh;
+  }
+  main h1 {
+    font-size: 40px;
+  }
+  main .col-12:first-child {
+    padding-left: 40px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
